@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .form_box {
+    width: 100vw;
+    height: 80vh;
+    background-image: url(./assets/form-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #59aadf;
+  }
+  .blue_box {
+    width: 100vw;
+    height: 80vh;
+    background-color: rgba(89, 170, 223, 0.85);
+    color: white;
+  }
+
+  .blue_box > form {
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .form_title {
+    font-size: 30px;
+  }
+
+  .form_description {
+    width: 90%;
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 18px;
+  }
+
+  form > input,
+  form > textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+  }
+
+  form > input::placeholder,
+  form > textarea::placeholder {
+    font-family: "Lekton", sans-serif;
+    color: white;
+  }
+
+  .form_button {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 12px;
+    width: 75%;
+    align-self: center;
+    border: none;
+    background-color: #e74c3c;
+  }
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
