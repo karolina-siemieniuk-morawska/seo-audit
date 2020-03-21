@@ -8,8 +8,20 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.box {
+  width: 70%;
+  margin: auto;
+}
+
+p {
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* SECTION 1 FORM */
   .form_box {
     width: 100vw;
     height: 80vh;
@@ -27,24 +39,21 @@ body {
   }
 
   .blue_box > form {
-    width: 70%;
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: auto;
-    padding: 20px;
+    margin-top: 20px;
+    padding: 0 10px;
   }
 
   .form_title {
-    font-size: 30px;
+    font-size: 28px;
   }
 
   .form_description {
     width: 90%;
-    font-size: 11px;
-    font-weight: 300;
-    line-height: 18px;
+    font-weight: 400;
   }
 
   form > input,
@@ -70,6 +79,73 @@ body {
     align-self: center;
     border: none;
     background-color: #e74c3c;
+  }
+
+  /* SECTION 2 PAGE DESCRIPTION */
+  .page-description_box {
+    margin-top: 50px;
+  }
+
+  .page_title {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .page_title > span {
+    color: lightgray;
+  }
+
+  .hr {
+    width: 55px;
+    height: 5px;
+    background: #e74c3c;
+    margin-bottom: 40px;
+  }
+
+  .paragraph_title {
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+
+  /* SECTION 3 BENEFITS */
+
+  .red_box {
+    margin-top: 30px;
+    background: #e74c3c;
+    padding: 10px;
+    color: white;
+  }
+
+  .red_box > * {
+    margin: 15px auto;
+    width: 70%;
+  }
+
+  .red_box > *:last-child {
+    font-weight: 800;
+  }
+
+  .icon_box {
+    width: 85%;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .icon_box > img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  .icon_box > p {
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .benefits_description {
+    margin: auto;
+    width: 85%;
   }
 }
 
