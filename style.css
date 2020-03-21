@@ -10,7 +10,7 @@ body {
 
 .box {
   width: 70%;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .big_title {
@@ -33,24 +33,32 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #59aadf;
+  margin-top: 20px;
 }
 .blue_cover_box {
   height: 80vh;
   background-color: rgba(89, 170, 223, 0.85);
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.blue_cover_box > .box:first-child {
+  margin-top: 70px;
+  width: 65%;
 }
 
 .blue_cover_box > form {
-  height: 80vh;
+  height: 40vh;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin-top: 20px;
   padding: 0 10px;
 }
 
 .form_description {
-  width: 90%;
   font-weight: 400;
 }
 
@@ -59,6 +67,11 @@ form > textarea {
   background: none;
   border: none;
   border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+textarea {
+  margin-bottom: 20px;
 }
 
 form > input::placeholder,
@@ -101,7 +114,6 @@ form > textarea::placeholder {
 }
 
 /* SECTION 3 BENEFITS */
-
 .red_box {
   margin-top: 30px;
   background: #e74c3c;
@@ -176,12 +188,27 @@ li {
   height: 5px;
   background-color: white;
 }
-/* Tablets (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
+
+/* Tablets (portrait) ----------- */
+@media only screen and (min-device-width: 640px) and (max-device-width: 1024px) {
+  .red_box {
+    width: 80%;
+    margin: 30px auto;
+  }
+
+  .red_box > * {
+    width: 90%;
+  }
+
+  .icon_box {
+    width: 70%;
+  }
+
+  .vr {
+    width: 450px;
+  }
 }
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* Styles */
+@media only screen and (min-width: 1024px) {
 }
