@@ -25,149 +25,157 @@ ul {
   font-weight: 500;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* SECTION 1 FORM */
-  .form_box {
-    width: 100vw;
-    height: 80vh;
-    background-image: url(./assets/form-background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #59aadf;
-  }
-  .blue_box {
-    width: 100vw;
-    height: 80vh;
-    background-color: rgba(89, 170, 223, 0.85);
-    color: white;
-  }
-
-  .blue_box > form {
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    padding: 0 10px;
-  }
-
-  .form_description {
-    width: 90%;
-    font-weight: 400;
-  }
-
-  form > input,
-  form > textarea {
-    background: none;
-    border: none;
-    border-bottom: 2px solid white;
-  }
-
-  form > input::placeholder,
-  form > textarea::placeholder {
-    font-family: "Lekton", sans-serif;
-    color: white;
-  }
-
-  .form_button {
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    text-transform: uppercase;
-    padding: 12px;
-    width: 75%;
-    align-self: center;
-    border: none;
-    background-color: #e74c3c;
-  }
-
-  /* SECTION 2 PAGE DESCRIPTION */
-  .page-description_box {
-    margin-top: 50px;
-  }
-
-  .page_title > span {
-    color: lightgray;
-  }
-
-  .hr {
-    width: 55px;
-    height: 5px;
-    background: #e74c3c;
-    margin-bottom: 40px;
-  }
-
-  .paragraph_title {
-    font-weight: 800;
-    margin-bottom: 10px;
-  }
-
-  /* SECTION 3 BENEFITS */
-
-  .red_box {
-    margin-top: 30px;
-    background: #e74c3c;
-    padding: 10px;
-    color: white;
-  }
-
-  .red_box > * {
-    margin: 15px auto;
-    width: 70%;
-  }
-
-  .red_box > *:last-child {
-    font-weight: 800;
-  }
-
-  .icon_box {
-    width: 85%;
-    margin: 25px auto;
-    display: flex;
-    align-items: center;
-  }
-
-  .icon_box > img {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-  }
-
-  .icon_box > p {
-    font-size: 13px;
-    font-weight: 800;
-  }
-
-  .benefits_description {
-    margin: auto;
-    width: 85%;
-  }
-
-  /* SECTION 4 OFFER */
-  .offer_box {
-    margin-top: 60px;
-  }
-
-  .offer_box > p {
-    width: 120%;
-  }
-
-  .offer_box > ul {
-    margin: auto;
-    margin-top: 30px;
-    width: 90%;
-  }
-
-  li {
-    list-style-image: url(./assets/list-square.jpg);
-    padding-left: 10px;
-  }
-
-  /* SECTION 5 BLUE BOX */
+/* SECTION 1 FORM */
+.form_box {
+  height: 80vh;
+  background-image: url(./assets/form-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #59aadf;
+}
+.blue_cover_box {
+  height: 80vh;
+  background-color: rgba(89, 170, 223, 0.85);
+  color: white;
 }
 
+.blue_cover_box > form {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.form_description {
+  width: 90%;
+  font-weight: 400;
+}
+
+form > input,
+form > textarea {
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+form > input::placeholder,
+form > textarea::placeholder {
+  font-family: "Lekton", sans-serif;
+  color: white;
+}
+
+.form_button {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 12px;
+  width: 75%;
+  align-self: center;
+  border: none;
+  background-color: #e74c3c;
+}
+
+/* SECTION 2 PAGE DESCRIPTION */
+.page-description_box {
+  margin-top: 50px;
+}
+
+.page_title > span {
+  color: lightgray;
+}
+
+.hr {
+  width: 55px;
+  height: 5px;
+  background: #e74c3c;
+  margin-bottom: 40px;
+}
+
+.paragraph_title {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+/* SECTION 3 BENEFITS */
+
+.red_box {
+  margin-top: 30px;
+  background: #e74c3c;
+  padding: 10px;
+  color: white;
+}
+
+.red_box > * {
+  margin: 15px auto;
+  width: 70%;
+}
+
+.red_box > *:last-child {
+  font-weight: 800;
+}
+
+.icon_box {
+  width: 85%;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+}
+
+.icon_box > img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.icon_box > p {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.benefits_description {
+  margin: auto;
+  width: 70%;
+}
+
+/* SECTION 4 OFFER */
+.offer_box {
+  margin-top: 50px;
+}
+
+.offer_box > p {
+  width: 120%;
+}
+
+.offer_box > ul {
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+li {
+  list-style-image: url(./assets/list-square.jpg);
+  padding-left: 10px;
+}
+
+/* SECTION 5 MOTIVATION */
+.motivation_container {
+  margin: 30px 0;
+  background-color: #59aadf;
+  color: white;
+}
+
+.motivation_container > section {
+  padding: 45px 0;
+}
+
+.vr {
+  width: 250px;
+  height: 5px;
+  background-color: white;
+}
 /* Tablets (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   /* Styles */
