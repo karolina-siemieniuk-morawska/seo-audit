@@ -44,23 +44,23 @@ ul {
   justify-content: center;
 }
 
-.form_description_box {
-  margin: 0 auto;
-  margin-top: 70px;
-  width: 65%;
+.form-wrapper {
+  width: 70%;
+  margin: auto;
 }
 
-.blue_cover_box > form {
+form {
   height: 40vh;
   margin-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  padding: 0 10px;
 }
 
 .form_description {
   font-weight: 400;
+  width: 75%;
+  margin-bottom: 20px;
 }
 
 form > input,
@@ -175,13 +175,14 @@ li {
 
 /* SECTION 5 MOTIVATION */
 .motivation_container {
-  margin: 30px 0;
   background-color: #59aadf;
   color: white;
+  margin-top: 50px;
 }
 
-.motivation_container > section {
-  padding: 45px 0;
+.motivation_container > .col-1,
+.motivation_container > .col-2 {
+  padding: 40px 0;
 }
 
 .vr {
@@ -203,15 +204,18 @@ li {
     height: 300px;
   }
 
-  .form_description_box {
-    margin: 0;
-    width: 30%;
+  .form-wrapper {
+    display: flex;
+    align-items: center;
   }
 
-  .blue_cover_box > form {
-    width: 40%;
-    height: 300px;
-    margin: 0;
+  form {
+    width: 100%;
+    height: 100%;
+  }
+
+  form > * {
+    margin-bottom: 15px;
   }
   .red_box {
     width: 80%;
@@ -233,4 +237,45 @@ li {
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width: 1024px) {
+  .big_title {
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
+
+  p,
+  ul {
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+
+  .container {
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .row_1 {
+    display: flex;
+  }
+
+  .row_2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .row_3 {
+    display: flex;
+  }
+
+  .form_box {
+    height: 600px;
+  }
+
+  .blue_cover_box {
+    width: 500px;
+    height: 600px;
+  }
 }
