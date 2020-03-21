@@ -44,7 +44,8 @@ ul {
   justify-content: center;
 }
 
-.blue_cover_box > .box:first-child {
+.form_description_box {
+  margin: 0 auto;
   margin-top: 70px;
   width: 65%;
 }
@@ -191,6 +192,27 @@ li {
 
 /* Tablets (portrait) ----------- */
 @media only screen and (min-device-width: 640px) and (max-device-width: 1024px) {
+  .form_box {
+    height: 300px;
+  }
+
+  .blue_cover_box {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+  }
+
+  .form_description_box {
+    margin: 0;
+    width: 30%;
+  }
+
+  .blue_cover_box > form {
+    width: 40%;
+    height: 300px;
+    margin: 0;
+  }
   .red_box {
     width: 80%;
     margin: 30px auto;
