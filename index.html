@@ -3,48 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lekton|Montserrat:300,400,500,800,900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./style.css" />
     <title>SEO Audit</title>
   </head>
 
   <body>
     <div class="container">
-      <section class="form_box">
-        <div class="blue_cover_box">
-          <div class="form-wrapper col-1">
-            <div class="form_description_box">
-              <h2 class="form_title big_title">How Can <br />I help you?</h2>
-              <p class="form_description">
-                Do you have a question or are you interested in working with us?
-                Just fill out the form field below
-              </p>
-            </div>
-            <form class="col-1">
-              <input class="form_name" type="name" placeholder="Your Name" />
-              <input
-                class="form_email"
-                type="email"
-                placeholder="Your E-mail"
-              />
-              <textarea
-                class="form_message"
-                rows="5"
-                placeholder="Your Message"
-              ></textarea>
-              <button class="form_button">Send Message</button>
+      <div class="first_column">
+        <section class="form">
+          <div class="form_content">
+            <h2 class="title">How Can <br />I help you?</h2>
+            <p>
+              Do you have a question or are you interested in working with us?
+              Just fill out the form field below
+            </p>
+
+            <form>
+              <input type="name" placeholder="Your Name" />
+              <input type="email" placeholder="Your E-mail" />
+              <textarea rows="5" placeholder="Your Message"></textarea>
+              <button class="button">Send Message</button>
             </form>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="page-description_box box col-2">
-        <h1 class="page_title big_title"><span>SEO</span> Audit</h1>
-        <div class="hr"></div>
-        <p class="paragraph_title">
+        <section class="offer">
+          <div class="offer_content">
+            <h2 class="title">What does an SEO audit include?</h2>
+            <p class="small_title">
+              So what exactly doeas an SEO audit involve? <br />Here's basic
+              rundown:
+            </p>
+            <ul>
+              <li>
+                Identifying & correcting technical issues such as meta titles,
+                descriptions, headings, and so on;
+              </li>
+              <li>Creating internal links;</li>
+              <li>
+                Assessing on-site content and ensuring it adheres to Google
+                standards;
+              </li>
+              <li>Working with redirects;</li>
+              <li>
+                Competitor analysis, comparing your website to that of your
+                biggest competitors;
+              </li>
+              <li>
+                Other SEO elements like implementing a sitemap, hreflang tag,
+                submitting your website to the google search Console, installing
+                SSL, etc.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <section class="info">
+        <h1 class="title"><span>SEO</span> Audit</h1>
+        <p class="small_title">
           Without proper optimisation, your website will seriously struggle to
           rank highly on Google.
         </p>
@@ -57,10 +74,8 @@
           sticks to these rules, and then assigns it a score. That score then
           determines how highly your website ranks on the search engine.
         </p>
-      </section>
 
-      <section class="benefits_box col-2">
-        <div class="red_box">
+        <div class="important_info">
           <p>
             If you want your website to rank highly on Google, you need to make
             sure it's adhering to the ranking criteria and scoring well.
@@ -72,27 +87,31 @@
           </p>
         </div>
 
-        <div class="icon_box board">
-          <img src="./assets/icon-1-board.jpg" alt="blackboard" />
-          <p class="icon_description">
-            Achieve better rankings,
-          </p>
-        </div>
-        <div class="icon_box comp">
-          <img src="./assets/icon-2-comp.jpg" alt="laptop" />
-          <p class="icon_description">
-            Help visitors to more easily navigate your site (that's right, we
-            don't just optimise for Google's robots),
-          </p>
-        </div>
-        <div class="icon_box bulb">
-          <img src="./assets/icon-3-bulb.jpg" alt="lightbulb" />
-          <p class="icon_description">
-            Avoid getting penalised by Google.
-          </p>
+        <div class="icons">
+          <div class="icon_box">
+            <img src="./assets/icon-1-board.jpg" alt="blackboard" />
+            <p class="icon_description">
+              Achieve better rankings,
+            </p>
+          </div>
+
+          <div class="icon_box">
+            <img src="./assets/icon-2-comp.jpg" alt="laptop" />
+            <p class="icon_description">
+              Help visitors to more easily navigate your site (that's right, we
+              don't just optimise for Google's robots),
+            </p>
+          </div>
+
+          <div class="icon_box">
+            <img src="./assets/icon-3-bulb.jpg" alt="lightbulb" />
+            <p class="icon_description">
+              Avoid getting penalised by Google.
+            </p>
+          </div>
         </div>
 
-        <p class="benefits_description">
+        <p>
           An SEO audit will make sure your website is running according to
           Google's standards, not experiencing any issues, and on its way to
           high rankings. Thats why you can focus on making other important
@@ -100,39 +119,9 @@
         </p>
       </section>
 
-      <section class="offer_box box col-1">
-        <h2 class="offer_title big_title">What does an SEO audit include?</h2>
-        <div class="hr"></div>
-        <p class="paragraph_title">
-          So what exactly doeas an SEO audit involve? <br />Here's basic
-          rundown:
-        </p>
-        <ul>
-          <li>
-            Identifying & correcting technical issues such as meta titles,
-            descriptions, headings, and so on;
-          </li>
-          <li>Creating internal links;</li>
-          <li>
-            Assessing on-site content and ensuring it adheres to Google
-            standards;
-          </li>
-          <li>Working with redirects;</li>
-          <li>
-            Competitor analysis, comparing your website to that of your biggest
-            competitors;
-          </li>
-          <li>
-            Other SEO elements like implementing a sitemap, hreflang tag,
-            submitting your website to the google search Console, installing
-            SSL, etc.
-          </li>
-        </ul>
-      </section>
-
-      <section class="motivation_container">
-        <div class="col-1">
-          <p class="box">
+      <section class="summary">
+        <div>
+          <p>
             As I mentioned before, I'm not just about optimising your website
             for Google's robots. My main focus is always the
             <em>user expeience</em>, and all of the changes I make to your
@@ -141,11 +130,9 @@
             and encourages them to visit again.
           </p>
         </div>
-
-        <div class="vr box"></div>
-
-        <div class="col-2">
-          <p class="box">
+        <img src="assets/white-bar.jpg" />
+        <div>
+          <p>
             Even if you running killer marketing campaigns, if your website
             isn't optimised and running smoothly then you'll suffer setbacks.
             Having an SEO audit performed on your site will allow you to have
@@ -153,7 +140,7 @@
             campaigns and leading more visitors to your site.
           </p>
           <br />
-          <p class="box">
+          <p>
             If you're interested in learning more about the service, have any
             questions, or would like to get in touch about having an SEO audit
             performed on your site, please leave your contact details below and
@@ -163,4 +150,8 @@
       </section>
     </div>
   </body>
+  <link
+    href="https://fonts.googleapis.com/css?family=Lekton|Montserrat:300,400,500,800,900&display=swap"
+    rel="stylesheet"
+  />
 </html>
