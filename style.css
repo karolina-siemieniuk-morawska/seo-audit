@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .title {
@@ -40,11 +40,7 @@ li {
 .form {
   height: 660px;
   width: 570px;
-  background-image: url(./assets/form-background.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #59aadf;
+
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -52,14 +48,29 @@ li {
   justify-content: center;
   margin-left: -175px;
   order: 1;
+  position: relative;
 }
-
+.form:before {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 660px;
+  right: 0;
+  left: calc(-50vw + 570px);
+  background-image: url(./assets/form-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #59aadf;
+}
 .form_content {
   height: 80%;
   display: flex;
   flex-wrap: wrap;
   width: 320px;
   margin-left: 100px;
+  position: relative;
+  z-index: 20;
 }
 
 .form_content > p,
@@ -90,13 +101,13 @@ form > textarea {
 form > input::placeholder,
 form > textarea::placeholder {
   font-size: 18px;
-  font-family: "Lekton", sans-serif;
+  font-family: 'Lekton', sans-serif;
   color: white;
 }
 
 .button {
   color: white;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 18px;
   text-transform: uppercase;
