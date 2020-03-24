@@ -40,7 +40,6 @@ li {
 .form {
   height: 660px;
   width: 570px;
-
   color: white;
   display: flex;
   flex-wrap: wrap;
@@ -50,6 +49,7 @@ li {
   order: 1;
   position: relative;
 }
+
 .form:before {
   content: "";
   position: absolute;
@@ -63,6 +63,7 @@ li {
   background-repeat: no-repeat;
   background-color: #59aadf;
 }
+
 .form_content {
   height: 80%;
   display: flex;
@@ -254,6 +255,20 @@ li {
     margin: 0;
   }
 
+  .form:before {
+    content: "";
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    background-image: url(./assets/form-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #59aadf;
+  }
+
   .form_content {
     margin: 0 50px;
   }
@@ -345,6 +360,20 @@ li {
     margin-bottom: 50px;
     padding: 0 50px;
     order: 1;
+  }
+
+  .form:before {
+    content: "";
+    display: block;
+    height: 300px;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    background-image: url(./assets/form-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #59aadf;
   }
 
   .form_content {
@@ -451,6 +480,20 @@ li {
     margin-bottom: 50px;
     padding: 0 50px;
     order: 1;
+  }
+
+  .form:before {
+    content: "";
+    display: block;
+    height: 300px;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    background-image: url(./assets/form-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #59aadf;
   }
 
   .form_content {
