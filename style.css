@@ -245,7 +245,7 @@ li {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media (min-device-width: 320px) and (max-device-width: 560px) {
+@media (min-width: 320px) and (max-width: 560px) {
   .container {
     display: initial;
   }
@@ -259,6 +259,7 @@ li {
     content: "";
     display: block;
     height: 100vh;
+    max-height: 700px;
     width: 100vw;
     position: absolute;
     left: 0;
@@ -348,7 +349,7 @@ li {
 }
 
 /* Tablets (portrait) ----------- */
-@media (min-device-width: 560px) and (max-device-width: 1000px) {
+@media (min-width: 560px) and (max-width: 1000px) {
   .container {
     display: initial;
   }
@@ -468,7 +469,7 @@ li {
 }
 
 /* Tablets (landscape) ----------- */
-@media (min-device-width: 1000px) and (max-device-width: 1224px) {
+@media (min-width: 1000px) and (max-width: 1224px) {
   .container {
     display: initial;
   }
