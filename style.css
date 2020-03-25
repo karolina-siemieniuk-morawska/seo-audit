@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -58,7 +52,6 @@ li {
   right: 0;
   left: calc(-50vw + 570px);
   background-image: url(./assets/form-background.jpg);
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #59aadf;
@@ -233,69 +226,84 @@ li {
 
 .summary > div:last-child::before {
   content: "";
-  /* display: inline-block; */
   background-color: white;
   width: 5px;
   height: 250px;
-  transform: rotatex(90);
+  display: block;
+  position: absolute;
 }
 
 .summary > div:last-child > p {
   margin-left: 100px;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media (min-width: 320px) and (max-width: 560px) {
+/* Tablets (landscape) ----------- */
+@media (max-width: 1200px) {
   .container {
     display: initial;
   }
 
   .form {
     width: 100vw;
+    height: 70vh;
+    min-height: 360px;
+    max-height: 660px;
     margin: 0;
+    margin-bottom: 50px;
   }
 
   .form:before {
-    content: "";
-    display: block;
-    height: 100vh;
-    max-height: 700px;
     width: 100vw;
+    height: 70vh;
+    min-height: 360px;
+    max-height: 660px;
     position: absolute;
     left: 0;
-    background-image: url(./assets/form-background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #59aadf;
+    right: 0;
   }
 
   .form_content {
-    margin: 0 50px;
+    width: 70%;
+    max-height: 450px;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .form_description {
+    width: 40%;
+  }
+
+  form {
+    width: 50%;
+    min-height: 270px;
   }
 
   .info {
-    width: 100vw;
-    margin-top: 30px;
-    padding: 0 50px;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .info > div:first-of-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
   }
 
   .important_info {
-    width: 100vw;
-    margin-left: -50px;
+    width: 40%;
+  }
+
+  .icons {
+    margin: 0;
+    margin-bottom: 20px;
+    width: 40%;
   }
 
   .icons img {
     margin-right: 20px;
-  }
-
-  .icons {
-    margin-top: 40px;
-  }
-
-  .icon_box {
-    width: 85vw;
-    margin-left: -25px;
   }
 
   .icon_box > h2,
@@ -304,33 +312,89 @@ li {
     margin: 0;
   }
 
-  .info > p {
-    margin-top: -10px;
-  }
-
   .offer {
-    width: 100vw;
     margin: 0;
+    margin: 50px auto;
+    width: 100%;
+    flex-wrap: nowrap;
   }
 
   .offer_content {
-    margin: 50px;
+    margin: 0;
+    width: 70%;
+    justify-content: space-between;
   }
 
-  .offer_content > div > p {
-    margin: 30px auto;
+  .offer_content > h2 {
+    max-width: 250px;
+    margin-top: 40px;
+    align-self: flex-start;
+  }
+
+  .offer_content > div {
+    max-width: 350px;
+    margin: 0;
   }
 
   .summary {
-    width: 100vw;
-    padding: 50px;
+    padding: 50px 15%;
+  }
+
+  .summary > div:first-child > p {
+    max-width: 250px;
+    margin-right: 5vw;
+  }
+
+  .summary > div:last-child > p {
+    margin-left: 8vw;
+  }
+}
+
+/* Tablets (portrait) ----------- */
+@media (max-width: 900px) {
+  .info > div:first-of-type {
+    display: initial;
+  }
+
+  .important_info {
+    width: initial;
+  }
+
+  .icons img {
+    margin-right: 20px;
+  }
+
+  .icons {
+    width: initial;
+    margin: 50px 0;
+  }
+
+  .offer {
+    margin-top: 10px;
+  }
+
+  .offer_content {
+    margin: 0 auto;
+  }
+
+  .offer_content > h2 {
+    min-width: 300px;
+    max-width: 500px;
+  }
+
+  .offer_content > div {
+    min-width: 450px;
+    margin: 0 auto;
+  }
+
+  .summary {
+    padding: 50px 15%;
     display: block;
     margin-top: 0;
   }
 
   .summary > div:first-child > p {
-    width: 240px;
-    margin-right: 0;
+    min-width: 70vw;
     margin-bottom: 50px;
   }
 
@@ -340,240 +404,92 @@ li {
     background-color: white;
     width: 70vw;
     height: 5px;
+    margin: 0 auto;
   }
 
   .summary > div:last-child > p {
     margin-left: 0;
-    margin-top: 50px;
+    padding-top: 50px;
+  }
+
+  .summary > div:last-child > p:last-of-type {
+    padding-top: 20px;
   }
 }
 
-/* Tablets (portrait) ----------- */
-@media (min-width: 560px) and (max-width: 1000px) {
-  .container {
-    display: initial;
-  }
-
+/* Smartphone (landscape) ----------- */
+@media (max-width: 750px) {
   .form {
-    width: 100vw;
-    height: 300px;
-    margin: 0;
-    margin-bottom: 50px;
-    padding: 0 50px;
-    order: 1;
+    height: 100vh;
   }
 
   .form:before {
-    content: "";
-    display: block;
-    height: 300px;
-    width: 100vw;
-    position: absolute;
-    left: 0;
-    background-image: url(./assets/form-background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #59aadf;
+    height: 100vh;
   }
 
-  .form_content {
-    margin: 0;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .form_content > h2 {
-    order: 2;
-  }
-
-  .form_content > p {
-    margin-top: -100px;
-    order: 3;
+  .form_description {
+    margin-top: -20px;
   }
 
   form {
-    width: 40%;
-    height: 250px;
+    min-height: 230px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media (max-width: 500px) {
+  .form_content {
+    display: initial;
+    width: 90vw;
+    height: 90vh;
+    margin: 50px;
+    max-height: initial;
   }
 
-  .info {
-    width: 100vw;
-    padding: 0 100px;
-  }
-
-  .important_info {
-    width: 100vw;
-    margin: 70px -100px;
-  }
-
-  .icons img {
-    margin-right: 20px;
-  }
-
-  .icons {
-    margin-top: 40px;
-    margin-right: 50px;
-  }
-
-  .icon_box > h2,
-  .icon_box > p {
-    font-size: 15px;
-    margin: 0;
-  }
-
-  .info > p {
-    margin-top: -10px;
-  }
-
-  .offer {
-    margin: 20px 0;
-    width: 100%;
-  }
-
-  .offer_content {
-    margin: 50px auto;
-  }
-
-  .offer_content > div > p {
-    margin: 30px auto;
-  }
-
-  .summary {
-    width: 100vw;
-    padding: 50px;
-    display: block;
+  .form_description {
+    width: initial;
     margin-top: 0;
   }
 
-  .summary > div:first-child > p {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 50px;
-  }
-
-  .summary > div:last-child::before {
-    content: "";
-    display: block;
-    background-color: white;
-    width: 60vw;
-    height: 5px;
-    margin: 0 auto;
-  }
-
-  .summary > div:last-child > p {
-    margin-left: 0;
-    margin-top: 50px;
-  }
-}
-
-/* Tablets (landscape) ----------- */
-@media (min-width: 1000px) and (max-width: 1224px) {
-  .container {
-    display: initial;
-  }
-
-  .form {
-    width: 100vw;
-    height: 300px;
-    margin: 0;
-    margin-bottom: 50px;
-    padding: 0 50px;
-    order: 1;
-  }
-
-  .form:before {
-    content: "";
-    display: block;
-    height: 300px;
-    width: 100vw;
-    position: absolute;
-    left: 0;
-    background-image: url(./assets/form-background.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #59aadf;
-  }
-
-  .form_content {
-    margin: 0 50px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-  }
-
-  .form_content > h2 {
-    order: 2;
-  }
-
-  .form_content > p {
-    margin-top: -100px;
-    order: 3;
-  }
-
   form {
-    width: 40%;
-    height: 250px;
-  }
-
-  .info {
-    width: 100vw;
-    padding: 0 100px;
+    width: initial;
+    max-height: 350px;
   }
 
   .important_info {
-    width: 100vw;
-    margin: 70px -100px;
-  }
-
-  .icons img {
-    margin-right: 20px;
-  }
-
-  .icons {
-    margin-top: 40px;
-    margin-right: 50px;
-  }
-
-  .icon_box > h2,
-  .icon_box > p {
-    font-size: 15px;
-    margin: 0;
-  }
-
-  .info > p {
-    margin-top: -10px;
-  }
-
-  .offer {
-    margin: 50px 0;
     width: 100%;
-    height: 500px;
+    margin-left: -12vw;
   }
 
-  .offer_content {
-    margin: 0 auto;
-    width: 70%;
-    justify-content: space-between;
+  .icon_box {
+    width: 130%;
+    margin-left: -15%;
+  }
+
+  .icon_box > p {
+    font-size: 14px;
+    line-height: 18px;
+    width: initial;
   }
 
   .offer_content > h2 {
-    width: 300px;
-    align-self: center;
+    min-width: 150px;
   }
 
   .offer_content > div {
-    width: 300px;
-    align-self: center;
+    min-width: 250px;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media (max-width: 350px) {
+  form {
+    width: initial;
+    max-height: 250px;
   }
 
-  .summary {
-    padding: 50px 180px;
-  }
-
-  .summary > div:last-child > p {
-    margin-left: 0;
+  .important_info {
+    width: 90%;
+    margin-left: -15%;
   }
 }
