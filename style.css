@@ -434,6 +434,10 @@ li {
   form {
     min-height: 230px;
   }
+
+  .offer_content > div {
+    min-width: initial;
+  }
 }
 
 /* Smartphones (portrait) ----------- */
