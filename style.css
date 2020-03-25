@@ -244,12 +244,13 @@ li {
   }
 
   .form {
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     min-height: 360px;
     max-height: 660px;
     margin: 0;
     margin-bottom: 50px;
+    overflow: hidden;
   }
 
   .form:before {
@@ -258,8 +259,8 @@ li {
     min-height: 360px;
     max-height: 660px;
     position: absolute;
-    left: 0;
     right: 0;
+    left: 0;
   }
 
   .form_content {
@@ -462,6 +463,7 @@ li {
 
   .important_info {
     width: 100%;
+    /* tutaj nie potrafię wycentrować */
     margin-left: -12vw;
   }
 
@@ -485,7 +487,7 @@ li {
   }
 }
 
-/* Smartphones (portrait) ----------- */
+/* Smartphones (small) ----------- */
 @media (max-width: 350px) {
   form {
     width: initial;
@@ -495,5 +497,11 @@ li {
   .important_info {
     width: 90%;
     margin-left: -15%;
+  }
+}
+
+@media (max-height: 350px) {
+  .form {
+    overflow: hidden;
   }
 }
