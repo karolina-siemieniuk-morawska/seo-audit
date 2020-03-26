@@ -50,3 +50,55 @@ li {
 .summary p:first-of-type {
   padding-bottom: 20px;
 }
+
+@media (max-width: 1200px) {
+  .important_info {
+    width: 70%;
+    margin: 40px auto;
+  }
+
+  .rescue {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .icons {
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  .icon_box {
+    align-items: flex-start;
+  }
+
+  .summary {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .icons {
+    display: initial;
+  }
+
+  .icons > div {
+    width: 100%;
+  }
+
+  .icon_box {
+    margin: 40px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .icons > div {
+    width: 70%;
+  }
+
+  .icon_box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
