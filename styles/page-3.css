@@ -1,0 +1,52 @@
+.info ul {
+  padding: 30px 50px 30px 15px;
+}
+
+li {
+  padding-bottom: 15px;
+}
+
+.important_info {
+  margin: 80px 0;
+}
+
+.important_info > p {
+  font-weight: normal !important;
+  padding-top: 0 !important;
+}
+
+.title {
+  line-height: 50px;
+}
+
+.rescue > .title::after {
+  content: url(../assets/blue-line.jpg);
+  display: block;
+  margin-top: 10px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-col,
+.second-col {
+  width: 48%;
+}
+
+.icon_box {
+  margin-bottom: 20px;
+}
+.icons img {
+  margin-right: 30px;
+}
+
+.summary {
+  display: initial;
+  margin-top: 0;
+}
+
+.summary p:first-of-type {
+  padding-bottom: 20px;
+}
