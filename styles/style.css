@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 b {
@@ -21,7 +21,7 @@ ul {
 }
 
 li {
-  list-style-image: url(./assets/list-square.jpg);
+  list-style-image: url(../assets/list-square.jpg);
   padding-left: 10px;
 }
 
@@ -48,7 +48,7 @@ li {
 }
 
 .form:before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
   height: 660px;
@@ -98,13 +98,13 @@ form > textarea {
 form > input::placeholder,
 form > textarea::placeholder {
   font-size: 18px;
-  font-family: 'Lekton', sans-serif;
+  font-family: "Lekton", sans-serif;
   color: white;
 }
 
 .button {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 18px;
   text-transform: uppercase;
@@ -204,11 +204,6 @@ form > textarea::placeholder {
   margin-top: 30px;
 }
 
-li {
-  list-style-image: url(./assets/list-square.jpg);
-  padding-left: 10px;
-}
-
 /* SUMMARY */
 .summary {
   margin-top: 40px;
@@ -224,7 +219,7 @@ li {
 }
 
 .summary > div:last-child::before {
-  content: '';
+  content: "";
   background-color: white;
   width: 5px;
   height: 250px;
@@ -399,7 +394,7 @@ li {
   }
 
   .summary > div:last-child::before {
-    content: '';
+    content: "";
     display: block;
     background-color: white;
     width: 70vw;
