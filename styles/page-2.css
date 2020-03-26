@@ -1,0 +1,52 @@
+.title {
+  line-height: 50px;
+}
+
+.info > .title::after,
+.offer_content .title::after {
+  margin-top: 0;
+}
+
+.small_title {
+  margin-top: 15px;
+  max-width: 400px;
+}
+
+.important_info > p:last-child {
+  padding-top: 0;
+}
+
+.icons {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: initial;
+  justify-content: space-between;
+}
+
+.icons > div:first-of-type {
+  width: 400px;
+}
+
+.icons > div:last-of-type {
+  width: 505px;
+}
+
+.icon_box {
+  align-items: initial;
+  margin-bottom: 20px;
+}
+
+.icon_box > img {
+  margin-right: 40px;
+}
+
+.icon_box p:first-of-type {
+  margin-top: 0;
+}
+
+.summary {
+  margin-top: 20px;
+  text-align: justify;
+}

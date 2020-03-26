@@ -2,6 +2,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+b {
+  font-weight: bold;
+}
+
 .title {
   font-size: 40px;
   padding-bottom: 10px;
@@ -40,7 +44,6 @@ li {
   align-items: center;
   justify-content: center;
   margin-left: -175px;
-  order: 1;
   position: relative;
 }
 
@@ -51,7 +54,7 @@ li {
   height: 660px;
   right: 0;
   left: calc(-50vw + 570px);
-  background-image: url(./assets/form-background.jpg);
+  background-image: url(../assets/form-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #59aadf;
@@ -82,7 +85,6 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  order: 2;
 }
 
 form > input,
@@ -118,7 +120,6 @@ form > textarea::placeholder {
 .info {
   width: 505px;
   margin-top: 70px;
-  order: 2;
 }
 
 .title > span {
@@ -127,7 +128,7 @@ form > textarea::placeholder {
 
 .info > .title::after,
 .offer_content .title::after {
-  content: url(./assets/red-line.jpg);
+  content: url(../assets/red-line.jpg);
   display: block;
   margin-top: -10px;
 }
@@ -183,7 +184,6 @@ form > textarea::placeholder {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  order: 3;
 }
 
 .offer_content {
@@ -215,7 +215,6 @@ li {
   padding: 50px 40px;
   background-color: #59aadf;
   color: white;
-  order: 4;
   display: flex;
 }
 
