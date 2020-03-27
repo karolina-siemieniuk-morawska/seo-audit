@@ -1,0 +1,36 @@
+.title {
+  line-height: 50px;
+}
+
+.important_info > p:last-child {
+  font-weight: normal;
+  padding-top: 0;
+}
+
+.strategy {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.strategy > .title {
+  font-size: 35px;
+  line-height: 40px;
+  max-width: 40%;
+  padding-bottom: 0;
+}
+
+.strategy > p {
+  width: 505px;
+}
+
+.summary {
+  display: initial;
+  margin-top: 60px;
+}
+
+.summary p:first-of-type {
+  padding-bottom: 20px;
+}
