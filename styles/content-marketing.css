@@ -34,3 +34,64 @@
 .summary p:first-of-type {
   padding-bottom: 20px;
 }
+
+@media (max-width: 1200px) {
+  .important_info {
+    width: 90%;
+  }
+
+  .strategy {
+    width: 70%;
+    margin: 80px auto;
+  }
+
+  .strategy > h2 {
+    width: 30%;
+  }
+
+  .strategy > p {
+    max-width: 60%;
+  }
+
+  .summary {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 900px) {
+  .important_info {
+    width: 85%;
+    margin: 0 auto;
+    display: flex !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .strategy {
+    display: initial;
+    margin: 0 auto;
+  }
+
+  .strategy > h2 {
+    max-width: 70% !important;
+    width: 70%;
+    margin: 50px auto 30px auto;
+  }
+
+  .strategy > p {
+    max-width: 70%;
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .summary {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .important_info {
+    width: 70%;
+  }
+}
