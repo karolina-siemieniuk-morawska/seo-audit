@@ -8,4 +8,4 @@ Page was created using the "mobile-first" approach and is fully responsive.
 
 ## Preview
 
-Page preview is available here: https://seo-audit.netlify.com/
+Page preview is available here: https://preview-audit.netlify.com/
